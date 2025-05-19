@@ -41,6 +41,3 @@ ex ()
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
-
-# Created by `pipx` on 2025-05-02 21:09:56
-export PATH="$PATH:/home/marci/.local/bin"
