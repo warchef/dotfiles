@@ -5,7 +5,8 @@ rcctl start apmd
 
 #CVS ports
 cd /usr
-cvs -qd anoncvs@mirror.osn.de:/cvs checkout -rOPENBSD_7_6 -P src
+doas cvs -z9 -qd anoncvs@mirror.osn.de:/cvs checkout -rOPENBSD_7_7 -P ports
+doas cvs -z9 -qd anoncvs@mirror.osn.de:/cvs checkout -P src
 
 nano /etc/login.conf
 default:\
