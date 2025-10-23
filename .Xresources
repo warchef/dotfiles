@@ -1,4 +1,4 @@
-Xft.dpi: 144
+Xft.dpi: 133
 
 ! These might also be useful depending on your monitor and personal preference:
 Xft.autohint: 0
@@ -34,9 +34,10 @@ XTerm*color14:      #34e2e2
 XTerm*color15:      #eeeeec
 
 ! Scrollbar engedélyezése
-XTerm*scrollBar: true
-XTerm*rightScrollBar: true
-XTerm*scrollBar_thumb: grey
+XTerm*scrollBar: false
+! XTerm*rightScrollBar: true
+! XTerm*scrollBar_thumb: grey
+XTerm.vt100.selectToClipboard: true
 XTerm*saveLines: 10000
 
 ! Kurzor beállítások
