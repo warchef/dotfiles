@@ -17,3 +17,5 @@ mise use -g go
 mise use -g erlang elixir
 
 sudo cp 30-touchpad.conf /etc/X11/xorg.conf.d/
+
+sudo pacman -S feh lazygit lazyvim
