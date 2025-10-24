@@ -15,6 +15,7 @@ sudo pacman -S --needed base-devel libffi libyaml openssl zlib
 mise use -g ruby
 mise use -g go
 mise use -g erlang elixir
+mise use dotnet
 
 sudo cp 30-touchpad.conf /etc/X11/xorg.conf.d/
 
