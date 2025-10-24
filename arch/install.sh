@@ -6,6 +6,7 @@ sudo systemctl enable --now valkey
 sudo systemctl enable --now docker
 sudo usermod -aG docker marci
 
+git clone https://aur.archlinux.org/paru-bin && cd paru-bin && makepkg -si && cd ~
 paru -Syu google-chrome jetbrains-toolbox spotify brave-bin
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
