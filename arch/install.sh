@@ -6,17 +6,31 @@ sudo systemctl enable --now valkey
 sudo systemctl enable --now docker
 sudo usermod -aG docker marci
 
+sudo cp 30-touchpad.conf /etc/X11/xorg.conf.d/
+
 git clone https://aur.archlinux.org/paru-bin && cd paru-bin && makepkg -si && cd .. && rm -rf paru-bin/
-paru -Syu google-chrome jetbrains-toolbox spotify brave-bin
+paru -Syu google-chrome jetbrains-toolbox spotify brave-bin local-by-flywheel-bin
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 sudo pacman -S --needed base-devel libffi libyaml openssl zlib
 
-mise use -g ruby
-mise use -g go
-mise use -g erlang elixir
+mise use -g ruby go erlang elixir
 mise use dotnet
 
 sudo cp 30-touchpad.conf /etc/X11/xorg.conf.d/
 
 sudo pacman -S feh lazygit lazyvim
+
+cd ../dwm && sudo make clean install
+cd ../slstatus && sudo make clean install
+cd ../dmenu && sudo make clean install
+
+cd ..
+cp .Xresources ~
+cp .xinitrc ~
+mkdir ~/wallpaper
+cp wall1.jpg ~/wallpaper
+
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk install java 25-tem
