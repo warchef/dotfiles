@@ -14,4 +14,4 @@ doas rcctl enable xenodm
 doas chsh -s /usr/local/bin/bash marci
 doas chsh -s /usr/local/bin/bash root
 cd /tmp && ftp https://cdn.openbsd.org/pub/OpenBSD/$(uname -r)/{ports.tar.gz,SHA256.sig}
-cd /usr && tar xzf /tmp/ports.tar.gz
+cd /usr && doas tar xzf /tmp/ports.tar.gz
