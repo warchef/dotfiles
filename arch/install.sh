@@ -6,8 +6,6 @@ sudo systemctl enable --now valkey
 sudo systemctl enable --now docker
 sudo usermod -aG docker marci
 
-sudo cp 30-touchpad.conf /etc/X11/xorg.conf.d/
-
 git clone https://aur.archlinux.org/paru-bin && cd paru-bin && makepkg -si && cd .. && rm -rf paru-bin/
 paru -Syu google-chrome jetbrains-toolbox spotify brave-bin local-by-flywheel-bin
 
