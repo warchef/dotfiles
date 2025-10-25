@@ -17,7 +17,7 @@ mise use dotnet
 
 sudo cp 30-touchpad.conf /etc/X11/xorg.conf.d/
 
-sudo pacman -S feh lazygit lazyvim
+sudo pacman -S feh lazygit lazydocker
 
 cd ../dwm && sudo make clean install
 cd ../slstatus && sudo make clean install
