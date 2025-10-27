@@ -5,8 +5,6 @@ doas pkg_add ranger mc xclip jetbrains-mono noto-nerd-fonts hack-fonts adobe-sou
 doas cp hostname.iwx0 /etc/
 doas cp mk.conf /etc/
 doas cp sysctl.conf /etc/
-doas mkdir /etc/X11/xorg.conf.d
-doas cp intel.conf
 cp .xsession ~
 cp .bashrc ~
 cp ../.Xresources ~
