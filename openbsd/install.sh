@@ -5,6 +5,8 @@ doas pkg_add ranger mc xclip jetbrains-mono noto-nerd-fonts hack-fonts adobe-sou
 doas cp hostname.iwx0 /etc/
 doas cp mk.conf /etc/
 doas cp sysctl.conf /etc/
+doas mkdir /etc/X11/xorg.conf.d
+doas cp intel.conf
 cp .xsession ~
 cp .bashrc ~
 cp ../.Xresources ~
@@ -17,6 +19,15 @@ doas rcctl enable xenodm
 doas rcctl enable vmd
 doas chsh -s /usr/local/bin/bash marci
 doas chsh -s /usr/local/bin/bash root
+doas sed -i 's/xconsole/#xconsole/' /etc/X11/xenodm/Xsetup_0
+doas usermod -G staff marci
 cd /tmp && ftp https://mirrors.chroot.ro/pub/OpenBSD/$(uname -r)/{ports.tar.gz,SHA256.sig}
 cd /usr && doas tar xzf /tmp/ports.tar.gz
 doas cvs -z9 -qd anoncvs@mirror.osn.de:/cvs checkout -P src
+cd ~
+mkdir vm
+cd vm
+mkdir iso
+cd iso
+ftp https://mirrors.chroot.ro/pub/OpenBSD/7.8/amd64/install78.iso
+ftp https://cdimage.debian.org/cdimage/archive/12.12.0/amd64/iso-cd/debian-12.12.0-amd64-netinst.iso
