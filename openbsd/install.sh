@@ -4,6 +4,7 @@ doas rcctl start apmd
 doas pkg_add ranger mc xclip jetbrains-mono noto-nerd-fonts hack-fonts adobe-source-code-pro feh bash bash-completion vim vim-spell-hu neovim luajit openssl p7zip chromium tdesktop postgresql-server postgresql-contrib postgresql-client postgis redis transmission-gtk libreoffice libreoffice-i18n-hu mupdf mpv intel-media-driver libva-utils htop go fzf uv ruby llvm lldb clang-tools-extra rust jdk elixir rust-analyzer rust-gdb rust-rustfmt rust-clippy node yarn py3-pip ripgrep gmake py3-pipx cmake xmlto libusb1 pcsc-lite gitlab-cli github-cli portslist samba ninja openvpn consolekit2 docker-cli docker-compose dosbox innoextract devilutionx openmw gemrb
 doas cp hostname.iwx0 /etc/
 doas cp mk.conf /etc/
+doas cp sysctl.conf /etc/
 cp .xsession ~
 cp .bashrc ~
 cp ../.Xresources ~
