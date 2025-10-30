@@ -29,3 +29,7 @@ mkdir iso
 cd iso
 ftp https://ftp2.eu.openbsd.org/pub/OpenBSD/7.8/amd64/install78.iso
 ftp https://cdimage.debian.org/cdimage/archive/12.12.0/amd64/iso-cd/debian-12.12.0-amd64-netinst.iso
+cd
+mkdir -p ~/.config/fontconfig/conf.d
+cp 01-emoji.conf ~/.config/fontconfig/conf.d/
+doas fc-cache -fv
