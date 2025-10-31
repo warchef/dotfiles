@@ -20,9 +20,9 @@ mkdir -p ~/.config/fontconfig/
 cp fonts.conf ~/.config/fontconfig/
 fc-cache -fv
 
-cd ../dwm && sudo make clean install
-cd ../slstatus && sudo make clean install
-cd ../dmenu && sudo make clean install
+cd ../dwm && sudo make clean install && make clean
+cd ../slstatus && sudo make clean install && make clean
+cd ../dmenu && sudo make clean install && make clean
 
 cd ..
 cp .Xresources ~
