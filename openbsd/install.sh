@@ -7,18 +7,20 @@ doas cp hostname.iwx0 /etc/
 doas cp mk.conf /etc/
 doas cp sysctl.conf /etc/
 doas cp wxconsctl.conf /etc/
+mkdir -p ~/.config/fontconfig/conf.d
+cp fonts.conf ~/.config/fontconfig/conf.d/
+fc-cache -fv
 cp .xsession ~
 cp .bashrc ~
 cp ../.Xresources ~
 mkdir ~/wallpaper && cp ../wall1.jpg ~/wallpaper/
-cd suckless/dwm && doas make clean install
-cd ../dmenu && doas make clean install
-cd ../slstatus && doas make clean install
+cd suckless/dwm && doas make clean install && make clean
+cd ../dmenu && doas make clean install && make clean
+cd ../slstatus && doas make clean install && make clean
 doas rcctl enable messagebus
 doas rcctl enable xenodm
 doas rcctl enable vmd
 doas chsh -s /usr/local/bin/bash marci
-doas chsh -s /usr/local/bin/bash root
 cd /tmp && ftp https://ftp2.eu.openbsd.org/pub/OpenBSD/$(uname -r)/{ports.tar.gz,SHA256.sig}
 cd /usr && doas tar xzf /tmp/ports.tar.gz
 doas cvs -z9 -qd anoncvs@mirror.osn.de:/cvs checkout -P src
@@ -29,7 +31,3 @@ mkdir iso
 cd iso
 ftp https://ftp2.eu.openbsd.org/pub/OpenBSD/7.8/amd64/install78.iso
 ftp https://cdimage.debian.org/cdimage/archive/12.12.0/amd64/iso-cd/debian-12.12.0-amd64-netinst.iso
-cd
-mkdir -p ~/.config/fontconfig/conf.d
-cp fonts.conf ~/.config/fontconfig/conf.d/
-fc-cache -fv
