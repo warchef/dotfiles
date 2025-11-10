@@ -23,7 +23,6 @@ doas rcctl enable vmd
 doas chsh -s /usr/local/bin/bash marci
 cd /tmp && ftp https://ftp2.eu.openbsd.org/pub/OpenBSD/$(uname -r)/{ports.tar.gz,SHA256.sig}
 cd /usr && doas tar xzf /tmp/ports.tar.gz
-doas cvs -z9 -qd anoncvs@mirror.osn.de:/cvs checkout -P src
 cd ~
 mkdir vm
 cd vm
@@ -31,3 +30,4 @@ mkdir iso
 cd iso
 ftp https://ftp2.eu.openbsd.org/pub/OpenBSD/7.8/amd64/install78.iso
 ftp https://cdimage.debian.org/cdimage/archive/12.12.0/amd64/iso-cd/debian-12.12.0-amd64-netinst.iso
+ftp https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/x86_64/alpine-standard-3.22.2-x86_64.iso
