@@ -21,10 +21,9 @@ doas rcctl enable messagebus
 doas rcctl enable xenodm
 doas rcctl enable vmd
 doas chsh -s /usr/local/bin/bash marci
-cd /usr
+cd /tmp && ftp https://ftp2.eu.openbsd.org/pub/OpenBSD/$(uname -r)/{ports.tar.gz,SHA256.sig}
+cd /usr && doas tar xzf /tmp/ports.tar.gz
 doas cvs -z9 -qd anoncvs@mirror.osn.de:/cvs checkout -P src
-doas cvs -z9 -qd anoncvs@mirror.osn.de:/cvs checkout -P ports
-doas cvs -z9 -qd anoncvs@mirror.osn.de:/cvs checkout -P xenocara
 cd ~
 mkdir vm
 cd vm
