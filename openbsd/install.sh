@@ -1,9 +1,10 @@
 doas rcctl enable apmd
 doas rcctl set apmd flags -A
 doas rcctl start apmd
-doas cp installurl /etc/
-doas pkg_add simple-mtpfs ranger mc xclip jetbrains-mono noto-nerd-fonts noto-emoji noto-fonts noto-cjk feh bash bash-completion vim vim-spell-hu openssl p7zip chromium ungoogled-chromium tor-browser tdesktop postgresql-server postgresql-contrib postgresql-client redis transmission-gtk libreoffice libreoffice-i18n-hu mupdf mpv intel-media-driver libva-utils htop go fzf uv ruby jdk elixir node yarn py3-pip gmake py3-pipx cmake xmlto libusb1 pcsc-lite gitlab-cli github-cli portslist samba ninja openvpn consolekit2 py3-gunicorn docker-cli docker-compose dosbox innoextract devilutionx openmw gemrb
 doas cp hostname.iwx0 /etc/
+doas sh /etc/netstart
+doas cp installurl /etc/
+doas pkg_add simple-mtpfs ranger mc xclip jetbrains-mono noto-nerd-fonts noto-emoji noto-fonts noto-cjk feh bash bash-completion vim vim-spell-hu openssl p7zip ungoogled-chromium tor-browser tdesktop postgresql-server postgresql-contrib postgresql-client redis transmission-gtk libreoffice libreoffice-i18n-hu mupdf mpv intel-media-driver libva-utils htop go fzf uv ruby jdk elixir node yarn py3-pip gmake py3-pipx cmake xmlto libusb1 pcsc-lite gitlab-cli github-cli portslist samba ninja openvpn consolekit2 py3-gunicorn docker-cli docker-compose dosbox innoextract devilutionx openmw gemrb
 doas cp mk.conf /etc/
 doas cp sysctl.conf /etc/
 doas cp wsconsctl.conf /etc/
