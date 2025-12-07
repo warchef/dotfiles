@@ -41,3 +41,10 @@ ex ()
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+
+export BROWSER=ungoogled-chromium
+
+# Opcionális: biztosra megyünk, hogy az XDG is tudja
+xdg-mime default ungoogled-chromium.desktop x-scheme-handler/http
+xdg-mime default ungoogled-chromium.desktop x-scheme-handler/https
+xdg-mime default ungoogled-chromium.desktop text/html
