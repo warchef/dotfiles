@@ -22,6 +22,7 @@ doas rcctl enable messagebus
 doas rcctl enable xenodm
 doas rcctl enable vmd
 doas chsh -s /usr/local/bin/bash marci
+cd /usr
 doas cvs -z9 -qd anoncvs@mirror.osn.de:/cvs checkout -P src
 doas cvs -z9 -qd anoncvs@mirror.osn.de:/cvs checkout -P ports
 doas cvs -z9 -qd anoncvs@mirror.osn.de:/cvs checkout -P xenocara
