@@ -24,7 +24,7 @@ doas rcctl enable vmd
 doas chsh -s /usr/local/bin/bash marci
 doas cvs -z9 -qd anoncvs@mirror.osn.de:/cvs checkout -P src
 doas cvs -z9 -qd anoncvs@mirror.osn.de:/cvs checkout -P ports
-doas cvs -z9 -qd anoncvs@mirror.osn.de:/cvs checkout -P xenodm
+doas cvs -z9 -qd anoncvs@mirror.osn.de:/cvs checkout -P xenocara
 cd ~
 mkdir vm
 cd vm
