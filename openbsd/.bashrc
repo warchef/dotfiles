@@ -43,8 +43,10 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 export BROWSER=ungoogled-chromium
-
-# Opcionális: biztosra megyünk, hogy az XDG is tudja
 xdg-mime default ungoogled-chromium.desktop x-scheme-handler/http
 xdg-mime default ungoogled-chromium.desktop x-scheme-handler/https
 xdg-mime default ungoogled-chromium.desktop text/html
+
+alias ll='eza -alF --icons --group-directories-first --git --header'
+alias ls='eza --icons --group-directories-first'
+alias lt='eza --tree --level=2 --icons'
