@@ -9,8 +9,8 @@ Xft.antialias: 1
 Xft.rgba: rgb
 
 ! Betűtípus
-XTerm*faceName: NotoSansM Nerd Font
-XTerm*faceSize: 12
+XTerm*faceName: ProFontWindows Nerd Font 
+XTerm*faceSize: 16
 
 ! Színséma
 XTerm*foreground:   white
