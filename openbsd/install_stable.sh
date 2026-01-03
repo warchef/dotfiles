@@ -4,7 +4,7 @@ doas rcctl start apmd
 doas cp hostname.iwx0 /etc/
 doas sh /etc/netstart
 doas cp installurl /etc/
-doas pkg_add python eza ranger mc xclip jetbrains-mono profont-nerd-fonts noto-emoji noto-fonts noto-cjk vim vim-spell-hu feh bash bash-completion openssl p7zip ungoogled-chromium tor-browser transmission-gtk libreoffice libreoffice-i18n-hu mupdf mpv intel-media-driver libva-utils htop fzf gmake cmake xmlto libusb1 pcsc-lite portslist ninja openvpn consolekit2 dosbox-x innoextract devilutionx openmw gemrb
+doas pkg_add python eza ranger mc xclip jetbrains-mono profont-nerd-fonts noto-emoji noto-fonts noto-cjk vim vim-spell-hu mutt emacs thunderbird feh bash bash-completion openssl p7zip tdesktop ungoogled-chromium tor-browser transmission-gtk libreoffice libreoffice-i18n-hu mupdf mpv intel-media-driver libva-utils htop fzf gmake cmake xmlto libusb1 pcsc-lite portslist ninja openvpn consolekit2 dosbox-x innoextract devilutionx openmw gemrb
 doas pkg_add postgresql-server postgresql-contrib postgresql-client redis rust go uv ruby jdk elixir node yarn llvm rust-gdb rust-analyzer rust-clippy rust-rustfmt clang-tools-extra py3-pip py3-pipx gitlab-cli github-cli docker-cli docker-compose 
 doas cp mk.conf /etc/
 doas cp sysctl.conf /etc/
