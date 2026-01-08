@@ -42,10 +42,10 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-export BROWSER=ungoogled-chromium
-xdg-mime default ungoogled-chromium.desktop x-scheme-handler/http
-xdg-mime default ungoogled-chromium.desktop x-scheme-handler/https
-xdg-mime default ungoogled-chromium.desktop text/html
+export BROWSER=chrome
+xdg-mime default chrome.desktop x-scheme-handler/http
+xdg-mime default chrome.desktop x-scheme-handler/https
+xdg-mime default chrome.desktop text/html
 
 alias ll='eza -alF --icons --group-directories-first --git --header'
 alias ls='eza --icons --group-directories-first'

@@ -61,7 +61,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "xterm", NULL };
-static const char *chromecmd[]  = { "ungoogled-chromium", NULL };
+static const char *chromecmd[]  = { "chrome", NULL };
 
 static const char *upvol[]      = { "/usr/bin/sndioctl",   "output.level=+0.03",      NULL };
 static const char *downvol[]    = { "/usr/bin/sndioctl",   "output.level=-0.03",      NULL };
