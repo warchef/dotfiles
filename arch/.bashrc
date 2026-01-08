@@ -14,7 +14,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 export PATH="$HOME/work/flutter/bin:$PATH"
-export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
+export CHROME_EXECUTABLE=/usr/bin/chromium
 
 alias ll='eza -alF --icons --group-directories-first --git --header'
 alias ls='eza --icons --group-directories-first'
