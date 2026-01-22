@@ -1,3 +1,4 @@
+mkdir -p ~/work
 mkdir -p ~/work/src
 mkdir -p ~/video
 mkdir -p ~/docs
