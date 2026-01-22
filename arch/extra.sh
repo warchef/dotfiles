@@ -1,5 +1,7 @@
-mkdir ~/work
-mkdir ~/work/src
+mkdir -p ~/work/src
+mkdir -p ~/video
+mkdir -p ~/docs
+mkdir -p ~/.local/share/unity3d
 gh auth login
 glab auth login
 
