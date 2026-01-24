@@ -1,4 +1,4 @@
-doas pkg_add python tdesktop tor-browser transmission-gtk libreoffice libreoffice-i18n-hu mupdf mpv htop fzf gmake dosbox-x innoextract devilutionx openmw gemrb
+doas pkg_add python tdesktop tor-browser transmission-gtk libreoffice libreoffice-i18n-hu mupdf mpv htop fzf gmake dosbox-x innoextract devilutionx openmw gemrb openwv
 doas pkg_add postgresql-server postgresql-contrib postgresql-client redis rust go uv ruby jdk elixir node yarn rust-gdb rust-analyzer rust-clippy rust-rustfmt clang-tools-extra py3-pip py3-pipx gitlab-cli github-cli docker-cli docker-compose 
 
 cd /usr
