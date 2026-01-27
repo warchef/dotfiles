@@ -5,7 +5,7 @@ mkdir -p ~/docs
 mkdir -p ~/.local/share/unity3d
 
 gpg --auto-key-locate nodefault,wkd --locate-keys torbrowser@torproject.org
-yay -Syu local-by-flywheel-bin upscayl-bin winboat-bin tor-browser-bin spotify brave-bin inkscape blender godot gimp chromium-widevine google-chrome intellij-idea-community-edition android-studio unityhub
+yay -Syu local-by-flywheel-bin upscayl-bin winboat-bin tor-browser-bin spotify brave-bin inkscape blender godot gimp chromium-widevine intellij-idea-community-edition android-studio unityhub
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
@@ -20,3 +20,5 @@ sdk install java 25.0.1-tem
 
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
+
+/bin/bash -c "$(curl -fsSL https://php.new/install/linux)"
