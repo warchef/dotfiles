@@ -5,7 +5,7 @@ mkdir -p ~/docs
 mkdir -p ~/.local/share/unity3d
 
 gpg --auto-key-locate nodefault,wkd --locate-keys torbrowser@torproject.org
-yay -Syu local-by-flywheel-bin upscayl-bin winboat-bin tor-browser-bin spotify brave-bin inkscape blender godot gimp chromium-widevine intellij-idea-community-edition android-studio unityhub
+yay -Syu local-by-flywheel-bin winboat-bin tor-browser-bin spotify brave-bin inkscape blender godot gimp chromium-widevine intellij-idea-community-edition android-studio unityhub
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
