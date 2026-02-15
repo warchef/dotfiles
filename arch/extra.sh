@@ -16,7 +16,7 @@ mise use -g erlang elixir
 
 curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
-sdk install java 25.0.1-tem
+sdk install java 25.0.2-tem
 
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
