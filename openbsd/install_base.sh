@@ -1,8 +1,6 @@
 doas rcctl enable apmd
 doas rcctl set apmd flags -A
 doas rcctl start apmd
-doas cp hostname.iwx0 /etc/
-doas sh /etc/netstart
 doas cp installurl /etc/
 doas pkg_add eza ranger dwz mc xclip jetbrains-mono profont-nerd-fonts noto-emoji noto-fonts noto-cjk vim vim-spell-hu feh bash bash-completion openssl p7zip chromium intel-media-driver libva-utils gmake cmake xmlto libusb1 pcsc-lite portslist ninja openvpn consolekit2
 doas cp mk.conf /etc/
