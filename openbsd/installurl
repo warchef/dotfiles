@@ -1,4 +1,4 @@
-https://ftp2.eu.openbsd.org/pub/OpenBSD
+#https://ftp2.eu.openbsd.org/pub/OpenBSD
 #https://ftp.hostserver.de/pub/OpenBSD/
 #https://cdn.openbsd.org/pub/OpenBSD/
-#https://mirrors.chroot.ro/pub/OpenBSD/
+https://mirrors.chroot.ro/pub/OpenBSD/
